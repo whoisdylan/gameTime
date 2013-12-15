@@ -3,8 +3,8 @@ CC = clang++
 CFLAGS = -std=c++11 -stdlib=libc++ -g -Wall -Wextra
 CFLAGSFAST = -Wall -Wextra -O4 -ffast-math
 OBJS = gameMain.o
-IDIR = `pkg-config --cflags glfw3`
-LDIR = `pkg-config --static --libs glfw3`
+IDIR = `pkg-config --cflags glew pkg-config --cflags glfw3`
+LDIR = `pkg-config --static --libs glew pkg-config --static --libs glfw3`
 
 
 all: gameMain

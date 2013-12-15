@@ -1,0 +1,4 @@
+*.un*
+*.dSYM/*
+gameMain
+objects*
